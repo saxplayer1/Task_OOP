@@ -16,6 +16,10 @@ public class Game {
     }
 
     public void startGame() throws InterruptedException {
+        if(this.field.getSize() < 5) {
+            System.out.println("Size of the field is to small");
+            return;
+        }
         field.printField();
         Player curPlayer = field.players.next();
         ActionService action = new ActionService(field);

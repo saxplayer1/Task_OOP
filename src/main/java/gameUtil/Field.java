@@ -165,7 +165,6 @@ public class Field {
         adj.get(f).get(0).unit = adj.get(s).get(0).unit;
         adj.get(s).get(0).unit = null;
         adj.get(f).get(0).unit.setPosition(f);
-        printField();
     }
 
     public void loseUnit(Player p, Unit unit) {
@@ -191,67 +190,63 @@ public class Field {
     void printField() {
         for (int i = 1; i <= size * size; i++) {
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.RED) {
-                System.out.print(" |rf| ");
+                System.out.print(" |r f| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.RED) {
-                System.out.print(" |rc| ");
+                System.out.print(" |r c| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.RED) {
-                System.out.print(" |rw| ");
+                System.out.print(" |r w| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.BLUE) {
-                System.out.print(" |bf| ");
+                System.out.print(" |b f| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.BLUE) {
-                System.out.print(" |bc| ");
+                System.out.print(" |b c| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.BLUE) {
-                System.out.print(" |bw| ");
+                System.out.print(" |b w| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.GREEN) {
-                System.out.print(" |gf| ");
+                System.out.print(" |g f| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.GREEN) {
-                System.out.print(" |gc| ");
+                System.out.print(" |g c| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.GREEN) {
-                System.out.print(" |gw| ");
+                System.out.print(" |g w| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.PURPLE) {
-                System.out.print(" |pf| ");
+                System.out.print(" |p f| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.PURPLE) {
-                System.out.print(" |pc| ");
+                System.out.print(" |p c| ");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.PURPLE) {
-                System.out.print(" |pw| ");
-            }
-
-            if (adj.get(i).get(0).unit == null && adj.get(i).get(0).getType() == ALL) {
-                System.out.print(" |_| ");
+                System.out.print(" |p w| ");
             }
 
             if (adj.get(i).get(0).unit == null && adj.get(i).get(0).getType() == FOOTMAN) {
-                System.out.print(" |≈| ");
+                System.out.print(" |≈≈≈| ");
             }
 
             if (adj.get(i).get(0).unit == null && adj.get(i).get(0).getType() == CAVALRY) {
-                System.out.print(" |_| ");
+                System.out.print(" |___| ");
             }
 
             if (adj.get(i).get(0).unit == null && adj.get(i).get(0).getType() == WINGED) {
-                System.out.print(" |⚠| ");
+                System.out.print(" |_А_| ");
             }
             if (i % size == 0) {
                 System.out.println();
