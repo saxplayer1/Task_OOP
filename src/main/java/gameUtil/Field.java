@@ -190,63 +190,63 @@ public class Field {
     void printField() {
         for (int i = 1; i <= size * size; i++) {
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.RED) {
-                System.out.print(" |r f| ");
+                System.out.print("|r f|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.RED) {
-                System.out.print(" |r c| ");
+                System.out.print("|r c|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.RED) {
-                System.out.print(" |r w| ");
+                System.out.print("|r w|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.BLUE) {
-                System.out.print(" |b f| ");
+                System.out.print("|b f|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.BLUE) {
-                System.out.print(" |b c| ");
+                System.out.print("|b c|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.BLUE) {
-                System.out.print(" |b w| ");
+                System.out.print("|b w|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.GREEN) {
-                System.out.print(" |g f| ");
+                System.out.print("|g f|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.GREEN) {
-                System.out.print(" |g c| ");
+                System.out.print("|g c|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.GREEN) {
-                System.out.print(" |g w| ");
+                System.out.print("|g w|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == FOOTMAN && adj.get(i).get(0).unit.getFaction() == Faction.PURPLE) {
-                System.out.print(" |p f| ");
+                System.out.print("|p f|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == CAVALRY && adj.get(i).get(0).unit.getFaction() == Faction.PURPLE) {
-                System.out.print(" |p c| ");
+                System.out.print("|p c|");
             }
 
             if (adj.get(i).get(0).unit != null && adj.get(i).get(0).unit.getType() == WINGED && adj.get(i).get(0).unit.getFaction() == Faction.PURPLE) {
-                System.out.print(" |p w| ");
+                System.out.print("|p w|");
             }
 
             if (adj.get(i).get(0).unit == null && adj.get(i).get(0).getType() == FOOTMAN) {
-                System.out.print(" |≈≈≈| ");
+                System.out.print("|≈≈≈|");
             }
 
             if (adj.get(i).get(0).unit == null && adj.get(i).get(0).getType() == CAVALRY) {
-                System.out.print(" |___| ");
+                System.out.print("|___|");
             }
 
             if (adj.get(i).get(0).unit == null && adj.get(i).get(0).getType() == WINGED) {
-                System.out.print(" |_А_| ");
+                System.out.print("|_А_|");
             }
             if (i % size == 0) {
                 System.out.println();

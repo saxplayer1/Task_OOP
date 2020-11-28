@@ -20,6 +20,9 @@ public class Game {
             System.out.println("Size of the field is to small");
             return;
         }
+        if(this.names.size() > 4) {
+            System.out.println("Too much players");
+        }
         field.printField();
         Player curPlayer = field.players.next();
         ActionService action = new ActionService(field);
