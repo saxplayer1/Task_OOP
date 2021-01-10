@@ -22,10 +22,17 @@ public class PlayerList {
 
     }
 
+    public void clear() {
+        this.start = new Node(null, null, null);
+        start.next = start;
+        start.prev = start;
+        size = 0;
+    }
+
     public PlayerList() {
     }
 
-    protected void add(Player player) {
+    public void add(Player player) {
         if (start == null) {
             start = new Node(player);
             start.next = start;
@@ -54,7 +61,7 @@ public class PlayerList {
         return cur.player;
     }
 
-    protected Player get(int index) {
+    public Player get(int index) {
         Node cur = start;
         int i = 0;
         while (index != i) {

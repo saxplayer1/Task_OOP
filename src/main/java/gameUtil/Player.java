@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Random;
 
 public class Player {
-    private Faction faction;
-    private String name;
-    private List<Unit> army = new ArrayList<>();
+    protected Faction faction;
+    protected String name;
+    protected List<Unit> army = new ArrayList<>();
 
     public List<Unit> getArmy() {
         return army;
@@ -28,5 +28,17 @@ public class Player {
         this.name = name;
     }
 
-
+    public String factionToString(){
+        switch(this.faction) {
+            case RED:
+                return "RED";
+            case BLUE:
+                return "BLUE";
+            case GREEN:
+                return "GREEN";
+            case PURPLE:
+                return "PURPLE";
+        }
+        return "";
+    }
 }

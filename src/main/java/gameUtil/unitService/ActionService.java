@@ -1,4 +1,4 @@
-package unitService;
+package gameUtil.unitService;
 
 import gameUtil.Field;
 import units.Unit;

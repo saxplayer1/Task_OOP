@@ -46,4 +46,16 @@ public class Unit {
     public void setPosition(int position) {
         this.position = position;
     }
+
+    public String typeToString() {
+        switch (this.type){
+            case WINGED:
+                return "WINGED";
+            case CAVALRY:
+                return "CAVALRY";
+            case FOOTMAN:
+                return "FOOTMAN";
+        }
+        return "";
+    }
 }
